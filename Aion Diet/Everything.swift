@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Friend {
+struct Profile {
     let name: String
     let image: UIImage
     let job: String
@@ -36,27 +36,27 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
     
 }
 
-class FriendController {
+class ProfileController {
     
     init() {
-        let names: [String] = ["Steve", "Elon"]
-        let images: [UIImage] = [#imageLiteral(resourceName: "steve"), #imageLiteral(resourceName: "elon")]
-        let jobs: [String] = ["Apple Fanboy", "Paypal Money"]
+        let names: [String] = ["Sean", "Nick"]
+        let images: [UIImage] = [#imageLiteral(resourceName: "sean"), #imageLiteral(resourceName: "nick")]
+        let jobs: [String] = ["food", "Chegan (Vegan + Chicken)"]
         
         var index: Int = 0
         
         for _ in names {
-            createFriend(withName: names[index], image: images[index], job: jobs[index])
+            createProfile(withName: names[index], image: images[index], job: jobs[index])
             index += 1
         }
     }
     
-    func createFriend(withName name: String, image: UIImage, job: String) {
-        let friend = Friend(name: name, image: image, job: job)
-        friends.append(friend)
+    func createProfile(withName name: String, image: UIImage, job: String) {
+        let profile = Profile(name: name, image: image, job: job)
+        profiles.append(profile)
     }
     
-    var friends: [Friend] = []
+    var profiles: [Profile] = []
 }
 
 
@@ -71,13 +71,13 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friendController.friends.count
+        return profileController.profiles.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as! TableViewCell
         
-        cell.friend = friendController.friends[indexPath.row]
+        cell.profile = profileController.profiles[indexPath.row]
         
         return cell
     }
@@ -88,13 +88,13 @@ class TableViewController: UITableViewController {
         let detailVC = segue.destination as! DetailViewController
         
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        detailVC.friend = friendController.friends[indexPath.row]
+        detailVC.profile = profileController.profiles[indexPath.row]
         
         guard let cell = tableView.cellForRow(at: indexPath) as? TableViewCell else { return }
         navigationControllerDelegate.sourceCell = cell
     }
     
-    let friendController = FriendController()
+    let profileController = ProfileController()
     let navigationControllerDelegate = NavigationControllerDelegate()
 }
 
@@ -107,15 +107,15 @@ class DetailViewController: UIViewController {
     }
     
     func updateViews() {
-        guard let friend = friend else { return }
+        guard let profile = profile else { return }
         
-        self.title = friend.name
-        imageView.image = friend.image
-        nameLabel.text = friend.name
-        jobLabel.text = friend.job
+        self.title = profile.name
+        imageView.image = profile.image
+        nameLabel.text = profile.name
+        jobLabel.text = profile.job
     }
     
-    var friend: Friend?
+    var profile: Profile?
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -190,16 +190,16 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 class TableViewCell: UITableViewCell {
     func updateViews() {
         
-        guard let friend = friend else { return }
-        nameLabel.text = friend.name
-        cellImageView.image = friend.image
+        guard let profile = profile else { return }
+        nameLabel.text = profile.name
+        cellImageView.image = profile.image
     }
     
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var cellImageView: UIImageView!
     
-    var friend: Friend? {
+    var profile: Profile? {
         didSet {
             updateViews()
         }
