@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2254AB223C474200F0B1CC /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2254AA223C474200F0B1CC /* SetupViewController.swift */; };
 		7B2E64D422397F7E003AEDC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E64D322397F7E003AEDC8 /* AppDelegate.swift */; };
 		7B2E64D922397F7E003AEDC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E64D722397F7E003AEDC8 /* Main.storyboard */; };
 		7B2E64DB22397F81003AEDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E64DA22397F81003AEDC8 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B2254AA223C474200F0B1CC /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		7B2E64D022397F7E003AEDC8 /* Aion Diet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aion Diet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2E64D322397F7E003AEDC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B2E64D822397F7E003AEDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B2254AC223C4A3E00F0B1CC /* Setup View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B2254AA223C474200F0B1CC /* SetupViewController.swift */,
+			);
+			path = "Setup View Controllers";
+			sourceTree = "<group>";
+		};
 		7B2E64C722397F7E003AEDC8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 			children = (
 				7B2E64D322397F7E003AEDC8 /* AppDelegate.swift */,
 				7B2E64E522397F8F003AEDC8 /* Everything.swift */,
+				7B2254AC223C4A3E00F0B1CC /* Setup View Controllers */,
 				7B2E64D722397F7E003AEDC8 /* Main.storyboard */,
 				7B2E64DA22397F81003AEDC8 /* Assets.xcassets */,
 				7B2E64DC22397F81003AEDC8 /* LaunchScreen.storyboard */,
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B2E64D422397F7E003AEDC8 /* AppDelegate.swift in Sources */,
+				7B2254AB223C474200F0B1CC /* SetupViewController.swift in Sources */,
 				7B2E64E622397F8F003AEDC8 /* Everything.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
