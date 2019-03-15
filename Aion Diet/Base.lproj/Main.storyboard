@@ -13,13 +13,13 @@
         <!--Profiles-->
         <scene sceneID="M9a-9A-Qon">
             <objects>
-                <tableViewController id="NiW-ll-0mj" customClass="TableViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="NiW-ll-0mj" customClass="TableViewController" customModule="Aion_Diet" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tZH-ZY-5e9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="52" id="aG1-HZ-Sg3" customClass="TableViewCell" customModule="Friends" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="52" id="aG1-HZ-Sg3" customClass="TableViewCell" customModule="Aion_Diet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aG1-HZ-Sg3" id="5Q0-2Z-mWJ">
@@ -72,7 +72,7 @@
         <!--Detail View Controller-->
         <scene sceneID="ZWQ-nH-4nQ">
             <objects>
-                <viewController id="hqI-7b-zS0" customClass="DetailViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hqI-7b-zS0" customClass="DetailViewController" customModule="Aion_Diet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ixE-gV-aiM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -332,8 +332,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ocA-Yw-PCk">
-                                <rect key="frame" x="67" y="228" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="ocA-Yw-PCk">
+                                <rect key="frame" x="29" y="143" width="316" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our plan recommendation based on your goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFW-HE-P61">
@@ -347,12 +347,25 @@
                                 <rect key="frame" x="143" y="563" width="88" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Try This Plan"/>
+                                <connections>
+                                    <segue destination="MmQ-Hn-f3n" kind="presentation" id="Hvd-Hp-sWB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjs-1r-obs">
                                 <rect key="frame" x="157" y="617" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Not Now"/>
+                                <connections>
+                                    <segue destination="MmQ-Hn-f3n" kind="presentation" id="cM3-pL-CKt"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get strong and lean with protein-rich foods" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWv-cK-nPj">
+                                <rect key="frame" x="23" y="370" width="329" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LhG-gC-jhz"/>
@@ -360,7 +373,89 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qu-tf-nZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3772" y="1511"/>
+            <point key="canvasLocation" x="3772" y="1510.7946026986508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ULw-HY-xKl">
+            <objects>
+                <viewController id="MmQ-Hn-f3n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZPW-Ne-LyV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Using notifications increases your chance of success by 100%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfZ-9K-Klr">
+                                <rect key="frame" x="35" y="151" width="304" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjD-lE-W5p">
+                                <rect key="frame" x="110" y="549" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Allow Notifications"/>
+                                <connections>
+                                    <segue destination="JOu-Bn-CLq" kind="presentation" id="G53-DL-OnO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiu-JZ-Azb">
+                                <rect key="frame" x="144" y="617" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Not Now"/>
+                                <connections>
+                                    <segue destination="JOu-Bn-CLq" kind="presentation" id="c6V-bH-HdM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RZG-Qm-GPW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPV-qA-TPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4637.6000000000004" y="1510.7946026986508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gwY-is-xHq">
+            <objects>
+                <viewController id="JOu-Bn-CLq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lb5-vR-o28">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSo-ZK-66F">
+                                <rect key="frame" x="16" y="56" width="283" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JOu-Bn-CLq" id="HRQ-n0-rpH"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYt-hM-Y7X">
+                                <rect key="frame" x="306" y="59" width="53" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="photo-camera"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QDM-iy-hYF"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="qQN-fJ-zqt" id="hfg-nM-MFx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGv-PO-nRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="qQN-fJ-zqt">
+                    <connections>
+                        <outlet property="delegate" destination="JOu-Bn-CLq" id="yC0-PS-uJf"/>
+                        <outlet property="searchBar" destination="fSo-ZK-66F" id="keJ-1l-Nbt"/>
+                        <outlet property="searchContentsController" destination="JOu-Bn-CLq" id="I9H-nE-BRg"/>
+                        <outlet property="searchResultsDataSource" destination="JOu-Bn-CLq" id="uym-Dh-W3u"/>
+                        <outlet property="searchResultsDelegate" destination="JOu-Bn-CLq" id="V7V-qH-Y88"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="5568.8000000000002" y="1510.7946026986508"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rfg-Kn-pFq">
@@ -383,9 +478,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="food" width="626" height="352"/>
+        <image name="photo-camera" width="384" height="384"/>
         <image name="steve" width="220" height="332"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="G53-DL-OnO"/>
+        <segue reference="Hvd-Hp-sWB"/>
         <segue reference="W0u-0z-BdR"/>
         <segue reference="9ir-HY-ywG"/>
     </inferredMetricsTieBreakers>
