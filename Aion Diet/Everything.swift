@@ -41,7 +41,7 @@ class ProfileController {
     init() {
         let names: [String] = ["Sean", "Nick"]
         let images: [UIImage] = [#imageLiteral(resourceName: "sean"), #imageLiteral(resourceName: "nick")]
-        let jobs: [String] = ["food", "Chegan (Vegan + Chicken)"]
+        let jobs: [String] = ["Plant Based", "Chegan (Vegan + Chicken)"]
         
         var index: Int = 0
         

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7B2254AB223C474200F0B1CC /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2254AA223C474200F0B1CC /* SetupViewController.swift */; };
+		7B2254AE223C4B6E00F0B1CC /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2254AD223C4B6E00F0B1CC /* GoalViewController.swift */; };
+		7B2254B0223C553400F0B1CC /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2254AF223C553400F0B1CC /* NotificationViewController.swift */; };
+		7B2254B2223C554E00F0B1CC /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2254B1223C554E00F0B1CC /* BasicViewController.swift */; };
+		7B2254B4223C558600F0B1CC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2254B3223C558600F0B1CC /* DescriptionViewController.swift */; };
+		7B2254B6223C55A800F0B1CC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2254B5223C55A800F0B1CC /* RegisterViewController.swift */; };
+		7B2254B8223C55C600F0B1CC /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2254B7223C55C600F0B1CC /* AddItemViewController.swift */; };
 		7B2E64D422397F7E003AEDC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E64D322397F7E003AEDC8 /* AppDelegate.swift */; };
 		7B2E64D922397F7E003AEDC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E64D722397F7E003AEDC8 /* Main.storyboard */; };
 		7B2E64DB22397F81003AEDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2E64DA22397F81003AEDC8 /* Assets.xcassets */; };
@@ -17,6 +23,12 @@
 
 /* Begin PBXFileReference section */
 		7B2254AA223C474200F0B1CC /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		7B2254AD223C4B6E00F0B1CC /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		7B2254AF223C553400F0B1CC /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		7B2254B1223C554E00F0B1CC /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		7B2254B3223C558600F0B1CC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		7B2254B5223C55A800F0B1CC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7B2254B7223C55C600F0B1CC /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		7B2E64D022397F7E003AEDC8 /* Aion Diet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aion Diet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2E64D322397F7E003AEDC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B2E64D822397F7E003AEDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +53,12 @@
 			isa = PBXGroup;
 			children = (
 				7B2254AA223C474200F0B1CC /* SetupViewController.swift */,
+				7B2254AD223C4B6E00F0B1CC /* GoalViewController.swift */,
+				7B2254B1223C554E00F0B1CC /* BasicViewController.swift */,
+				7B2254B3223C558600F0B1CC /* DescriptionViewController.swift */,
+				7B2254B5223C55A800F0B1CC /* RegisterViewController.swift */,
+				7B2254AF223C553400F0B1CC /* NotificationViewController.swift */,
+				7B2254B7223C55C600F0B1CC /* AddItemViewController.swift */,
 			);
 			path = "Setup View Controllers";
 			sourceTree = "<group>";
@@ -146,7 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2254B0223C553400F0B1CC /* NotificationViewController.swift in Sources */,
+				7B2254B4223C558600F0B1CC /* DescriptionViewController.swift in Sources */,
+				7B2254B2223C554E00F0B1CC /* BasicViewController.swift in Sources */,
+				7B2254B6223C55A800F0B1CC /* RegisterViewController.swift in Sources */,
 				7B2E64D422397F7E003AEDC8 /* AppDelegate.swift in Sources */,
+				7B2254B8223C55C600F0B1CC /* AddItemViewController.swift in Sources */,
+				7B2254AE223C4B6E00F0B1CC /* GoalViewController.swift in Sources */,
 				7B2254AB223C474200F0B1CC /* SetupViewController.swift in Sources */,
 				7B2E64E622397F8F003AEDC8 /* Everything.swift in Sources */,
 			);
