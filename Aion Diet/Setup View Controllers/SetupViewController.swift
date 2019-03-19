@@ -12,6 +12,4 @@ class SetupViewController: UIViewController {
     
     
     
-    
-    
 }
