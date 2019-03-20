@@ -9,9 +9,11 @@
 import UIKit
 
 struct Profile {
+    
     let name: String
     let image: UIImage
     let job: String
+    
 }
 
 class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
